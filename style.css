@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root {
+    --primary-color: #28831e;
+    --faint-color: rgb(40, 131, 30, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0.2rem;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    position:relative;
+    padding-bottom: 129px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.wrap-cash-given {
+    margin: auto;
+}
+
+.wrap-table {
+    margin: auto;
+}
+
+.heading {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-top: 0rem;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.input {
+    font-size: 1rem;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.button {
+    border-radius: 0.3rem;
+    width: 100px;
+    margin: 0.5rem auto;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--faint-color);
+    font-weight: 900;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+}
+
+table {
+    width: 60%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    border: 2px solid var(--primary-color);
+    width: 0%;
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
+
+p {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.msg{
+    color: rgb(255, 0, 0, 0.7);
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    position:absolute;
+    bottom:0px;
+    height: 129px;
+    width: 100%;
+}
+
+footer{
+    margin: auto;
+}
+
+
+.footer .link{
+    font-size: 30px;
+    color: black;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.non-bullet {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    padding: 1rem;
+}
