@@ -125,6 +125,10 @@ footer{
     color: black;
 }
 
+.footer .link:hover{
+    font-size: 35px;
+}
+
 .footer ul {
     padding-inline-start: 0px;
 }

@@ -16,10 +16,12 @@ wrapTable.style.display = "none";
 
 nextButton.addEventListener("click", function validateBillAmount() {
     nextMessage.style.display = "none";
+    checkMessage.style.display = "none";
     if (billAmount.value > 0) {
         //if bill amount is valid given cash and other functionalities will be visible
         //bonus challenge
         wrapCashGiven.style.display = "block";
+        nextButton.style.display = "none";
     } else {
         showNextMessage("Bill amount should be greater than zero");
     }
@@ -34,7 +36,12 @@ checkButton.addEventListener("click", function processing() {
     var cashval = Number(cashGiven.value);
     var billval = Number(billAmount.value);
 
-    if (cashval <= 0) {
+    if (billval <= 0 && cashval <= 0) {
+        showNextMessage("Bill amount should be greater than zero");
+        showCheckMessage("Cash given cannot be negative or zero");
+    } else if (billval <= 0) {
+        showNextMessage("Bill amount should be greater than zero");
+    } else if (cashval <= 0) {
         showCheckMessage("Cash given cannot be negative or zero");
     } else if (cashval === billval) {
         showCheckMessage("Cash given is equal to bill amount. No need to return any cahnge");
